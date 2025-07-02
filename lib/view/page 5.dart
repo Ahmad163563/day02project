@@ -258,9 +258,10 @@ class _Page5State extends State<Page5> {
               Row(
                 children: [
                   Expanded(
-                    child: OutlinedButton(
+                    child: ElevatedButton(
+                  style: ElevatedButton.styleFrom(backgroundColor: Colors.white70),
                       onPressed: () {},
-                      child: Text("Reject"),
+                      child: Text("Reject",style: TextStyle(color: Colors.green),),
                     ),
                   ),
                   SizedBox(width: 12),
@@ -270,7 +271,7 @@ class _Page5State extends State<Page5> {
                       style: ElevatedButton.styleFrom(
                         backgroundColor: Colors.green,
                       ),
-                      child: Text("Accept"),
+                      child: Text("Accept",style: TextStyle(color: Colors.white),),
                     ),
                   ),
                 ],
@@ -334,9 +335,10 @@ class _Page5State extends State<Page5> {
               Row(
                 children: [
                   Expanded(
-                    child: OutlinedButton(
+                    child: ElevatedButton(
                       onPressed: () {},
-                      child: Text("Reject"),
+                      style: ElevatedButton.styleFrom(backgroundColor: Colors.white70),
+                      child: Text("Reject",style: TextStyle(color: Colors.green),),
                     ),
                   ),
                   SizedBox(width: 12),
@@ -346,7 +348,7 @@ class _Page5State extends State<Page5> {
                       style: ElevatedButton.styleFrom(
                         backgroundColor: Colors.green,
                       ),
-                      child: Text("Accept"),
+                      child: Text("Accept",style: TextStyle(color: Colors.white),),
                     ),
                   ),
                 ],
