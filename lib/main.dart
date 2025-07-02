@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
         title: 'Flutter Demo',
         theme: ThemeData(
         ),
-        home: Page6()//Page1()//Page3()//Page5()//Page4()//Page3()//Page2()//Page1() //Home(),
+        home: Page1()//Page6()//Page1()//Page3()//Page5()//Page4()//Page3()//Page2()//Page1() //Home(),
     );
   }
 

@@ -33,6 +33,13 @@ class _Page6State extends State<Page6> {
                         "Load Details",
                         style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
                       ),
+                       Spacer(),
+                       Container(
+                           decoration: BoxDecoration(
+                             borderRadius: BorderRadius.circular(5),
+                             border: Border.all(color: Colors.grey)
+                           ),
+                           child: Icon(Icons.more_vert,color: Colors.black,))
                     ],
                   ),
                   SizedBox(height: 10),
@@ -56,7 +63,7 @@ class _Page6State extends State<Page6> {
 
           // Foreground white card
           Positioned(
-            bottom: 40,
+            bottom: 0,
             left: 0,
             right: 0,
             child: Container(
@@ -122,15 +129,34 @@ class _Page6State extends State<Page6> {
 
                   // Row of icons (dummy)
                   Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
-                      Icon(Icons.chat, color: Colors.green),
-                      Icon(Icons.call, color: Colors.green),
+                      SizedBox(width: 20,),
+                      Icon(Icons.fire_truck, color: Colors.green),
+                      SizedBox(width: 15,),
+
+                      Text('240 - Lorries'),
+                      SizedBox(width: 15,),
+                      VerticalDivider(
+                        color: Colors.grey,
+                        thickness: 1,
+                        indent: 5,
+                        endIndent:5 ,
+                      ),
+                      SizedBox(width: 20,),
+                      Icon(Icons.watch_later_sharp, color: Colors.green),
+                      SizedBox(width: 15,),
+                      Text('Since - 2013')
                     ],
                   ),
 
                   SizedBox(height: 20),
-
+                  Row(
+                    children: [
+                      SizedBox(width: 3,),
+                      Text('Asking Price'),
+                    ],
+                  ),
+                    SizedBox(height: 10,),
                   // Price Row
                   Row(
                     children: [
@@ -139,8 +165,12 @@ class _Page6State extends State<Page6> {
                         style: TextStyle(
                             fontSize: 18, fontWeight: FontWeight.bold),
                       ),
+                      SizedBox(width: 10,),
+                      Text('Fixed'),
                       Spacer(),
-                      Icon(Icons.watch_later, color: Colors.green),
+                      CircleAvatar(
+                          backgroundColor: Colors.green,
+                          child: Icon(Icons.phone, color: Colors.white)),
                     ],
                   ),
 
@@ -154,13 +184,15 @@ class _Page6State extends State<Page6> {
                       style: TextStyle(fontWeight: FontWeight.bold),
                     ),
                   ),
+                  SizedBox(height: 15,),
+                  Text('lorem lpsum is simply is simply dummy text of the\nprinting and type setting industry.Lorem\nlpsum has been the...'),
 
-                  SizedBox(height: 10),
+                  SizedBox(height: 20),
 
                   // Accept Button
                   ElevatedButton(
                     onPressed: () {},
-                    child: Text("Accept Bid"),
+                    child: Text("Accept ",style: TextStyle(color: Colors.white),),
                     style: ElevatedButton.styleFrom(
                       backgroundColor: Colors.green,
                       minimumSize: Size(double.infinity, 45),
