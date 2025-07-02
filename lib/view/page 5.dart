@@ -46,7 +46,7 @@ class _Page5State extends State<Page5> {
           Row(
             children: [
               SizedBox(width: 25,),
-              Text('Mirpur 11 Block c Dhaka\n Bangladesh',style: TextStyle(color: Colors.grey[600],fontSize: 18),),
+              Text('Mirpur 11 Block c Dhaka\nBangladesh',style: TextStyle(color: Colors.grey[600],fontSize: 18),),
               SizedBox(width: 70,),
               Container(
                 decoration: BoxDecoration(
@@ -70,7 +70,7 @@ class _Page5State extends State<Page5> {
            borderRadius: BorderRadius.circular(10),
            border: Border.all(color: Colors.grey)//color: Colors.grey[50],
          ),
-            height: 150,
+            height: 120,
                width: 350,
                child: Row(
                  children: [

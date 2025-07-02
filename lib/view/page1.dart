@@ -122,7 +122,7 @@ class _Page1State extends State<Page1> {
             SizedBox(height: 23,),
             Row(
               children: [
-                SizedBox(width: 30,),
+                SizedBox(width: 8,),
                 Container(
                   height: 150,
                   width: 170,
@@ -139,7 +139,7 @@ class _Page1State extends State<Page1> {
                     ],
                   ),
                 ),
-                SizedBox(width: 12),
+                SizedBox(width: 10),
                 Container(
                   height: 150,
                   width: 170,
@@ -257,6 +257,11 @@ class _Page1State extends State<Page1> {
                   ],
                 )
             ),
+            Container(
+              height: 10,
+              width: 10,
+              color: Colors.white,
+            )
           ],
         ),
       ),

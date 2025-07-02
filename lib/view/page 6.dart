@@ -56,10 +56,11 @@ class _Page6State extends State<Page6> {
 
           // Foreground white card
           Positioned(
-            bottom: 0,
+            bottom: 40,
             left: 0,
             right: 0,
             child: Container(
+
               margin: EdgeInsets.all(16),
               padding: EdgeInsets.all(16),
               decoration: BoxDecoration(
@@ -69,7 +70,7 @@ class _Page6State extends State<Page6> {
                   BoxShadow(
                     color: Colors.black26,
                     blurRadius: 10,
-                    offset: Offset(0, -2),
+                    offset: Offset(0, 2),
                   ),
                 ],
               ),
@@ -84,6 +85,11 @@ class _Page6State extends State<Page6> {
                         style: TextStyle(
                             fontSize: 16, fontWeight: FontWeight.bold),
                       ),
+                      Spacer(),
+                      CircleAvatar(
+                        backgroundColor: Colors.white,
+                          foregroundColor: Colors.black,
+                          child: IconButton(onPressed: (){}, icon: Icon(Icons.close_rounded)))
                     ],
                   ),
                   SizedBox(height: 10),
@@ -94,7 +100,7 @@ class _Page6State extends State<Page6> {
                       CircleAvatar(
                         radius: 30,
                         backgroundColor: Colors.grey.shade300,
-                        child: Image.asset('assets/truck.jpg')//Icon(Icons.local_shipping, size: 30),
+                        child: Image.asset('assets/tanker.webp')//Icon(Icons.local_shipping, size: 30),
                       ),
                       SizedBox(width: 10),
                       Column(
