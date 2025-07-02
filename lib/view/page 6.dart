@@ -88,7 +88,6 @@ class _Page6State extends State<Page6> {
                       Spacer(),
                       CircleAvatar(
                         backgroundColor: Colors.white,
-                          foregroundColor: Colors.black,
                           child: IconButton(onPressed: (){}, icon: Icon(Icons.close_rounded)))
                     ],
                   ),
@@ -97,11 +96,14 @@ class _Page6State extends State<Page6> {
                   // Image + Text
                   Row(
                     children: [
-                      CircleAvatar(
-                        radius: 30,
-                        backgroundColor: Colors.grey.shade300,
-                        child: Image.asset('assets/tanker.webp')//Icon(Icons.local_shipping, size: 30),
-                      ),
+                      Container(
+                       height: 80,
+                          width: 100,
+                          decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10),
+                            border: Border.all(color: Colors.grey)
+                          ),
+                          child: Image.asset('assets/tanker.webp')),
                       SizedBox(width: 10),
                       Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
@@ -112,8 +114,7 @@ class _Page6State extends State<Page6> {
                               style: TextStyle(color: Colors.grey)),
                         ],
                       ),
-                      Spacer(),
-                      Icon(Icons.settings, size: 20),
+
                     ],
                   ),
 
