@@ -42,18 +42,32 @@ class _Page6State extends State<Page6> {
                            child: Icon(Icons.more_vert,color: Colors.black,))
                     ],
                   ),
-                  SizedBox(height: 10),
-                  Text(
-                    "Your Load is disabled",
-                    style: TextStyle(color: Colors.red),
+                  SizedBox(height: 20),
+                  Container(
+                    color: Colors.white,
+                    height: 50,
+                    width: double.infinity,
+                    child: Row(
+                      children: [
+                        SizedBox(width: 20,),
+                        Icon(Icons.close_rounded,color: Colors.red,),
+                        SizedBox(width: 30,),
+                        Text(
+                          "Your Load is disabled",
+                          style: TextStyle(color: Colors.red),
+                        ),
+                        SizedBox(width: 85,),
+                        Text('Enable',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 22,color: Colors.red),)
+                      ],
+                    ),
                   ),
                   SizedBox(height: 20),
                   // Truck icons (dummy row)
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: [
-                      Icon(Icons.local_shipping, color: Colors.green),
-                      Icon(Icons.local_shipping, color: Colors.green),
+                      CircleAvatar(child: Icon(Icons.indeterminate_check_box, color: Colors.green)),
+                       CircleAvatar(child: Icon(Icons., color: Colors.green)),
                     ],
                   ),
                 ],
