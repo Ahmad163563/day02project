@@ -21,7 +21,7 @@ class _Page9State extends State<Page8> {
             width: 300,
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(10),
-              color: Colors.grey[50]
+              border: Border.all(color: Colors.grey)//color: Colors.grey[50]
             ),
             child: Padding(
               padding: const EdgeInsets.all(8.0),
@@ -45,12 +45,12 @@ class _Page9State extends State<Page8> {
             width: 350,
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(10),
-              color: Colors.grey[50]
+              border: Border.all(color: Colors.grey)//color: Colors.grey[50]
             ),
             child: Column(
               children: [
                 //SizedBox(width: 10),
-
+           SizedBox(height: 30,),
                 Text('Estimated delivery time'),
                 Text('15-20 min'),
                 Divider(

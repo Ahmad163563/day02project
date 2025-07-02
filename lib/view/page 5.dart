@@ -18,8 +18,8 @@ class _Page5State extends State<Page5> {
       appBar: AppBar(
         title: Row(
           children: [
-            SizedBox(width: 20,),
-            Text('Order',style: TextStyle(fontSize: 24,fontWeight: FontWeight.bold,color: Colors.black),)
+            SizedBox(width: 5,),
+            Text('Order',style: TextStyle(fontSize: 27,fontWeight: FontWeight.bold,color: Colors.black),)
           ],
         ),
         actions: [
@@ -86,7 +86,6 @@ class _Page5State extends State<Page5> {
                     SizedBox(width: 10,),
                     Row(
                       children: [
-        
                         Icon(Icons.calendar_today, color: Colors.green, size: 30),
                         SizedBox(width: 4),
                         Text(
@@ -264,7 +263,7 @@ class _Page5State extends State<Page5> {
                 children: [
                   Expanded(
                     child: ElevatedButton(
-                  style: ElevatedButton.styleFrom(backgroundColor: Colors.white70),
+                  style: ElevatedButton.styleFrom(backgroundColor: Colors.white),
                       onPressed: () {},
                       child: Text("Reject",style: TextStyle(color: Colors.green),),
                     ),

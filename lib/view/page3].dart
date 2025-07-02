@@ -65,37 +65,33 @@ class _Page3State extends State<Page3> {
             Row(
               children: [
                 SizedBox(width: 20,),
-                Transform.rotate(
-                  angle: 0.2,
-                  
-                  child: Container(
-                    width: 100,
-                    height: 140,
-                    decoration: BoxDecoration(
-                      color: Colors.green,
-                      borderRadius: BorderRadius.circular(20),
-                    ),
-                    padding: EdgeInsets.all(12),
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        Text(
-                          "Date",
-                          style: TextStyle(color: Colors.white70, fontSize: 14),
+                 Container(
+                  width: 100,
+                  height: 140,
+                  decoration: BoxDecoration(
+                    color: Colors.green,
+                    borderRadius: BorderRadius.circular(20),
+                  ),
+                  padding: EdgeInsets.all(12),
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Text(
+                        "Date",
+                        style: TextStyle(color: Colors.white70, fontSize: 14),
+                      ),
+                      SizedBox(height: 8),
+                      Icon(Icons.calendar_today, color: Colors.white, size: 30),
+                      SizedBox(height: 8),
+                      Text(
+                        "3/4/2021",
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontWeight: FontWeight.bold,
+                          fontSize: 14,
                         ),
-                        SizedBox(height: 8),
-                        Icon(Icons.calendar_today, color: Colors.white, size: 30),
-                        SizedBox(height: 8),
-                        Text(
-                          "3/4/2021",
-                          style: TextStyle(
-                            color: Colors.white,
-                            fontWeight: FontWeight.bold,
-                            fontSize: 14,
-                          ),
-                        ),
-                      ],
-                    ),
+                      ),
+                    ],
                   ),
                 ),
                 SizedBox(width: 10,),
