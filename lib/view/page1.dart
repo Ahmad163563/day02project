@@ -18,21 +18,26 @@ class _Page1State extends State<Page1> {
       appBar: AppBar(
         leading: IconButton(onPressed: () {}, icon: Icon(Icons.menu)),
         title: Container(
-          height: 35,
-          width: 200,
+          alignment: Alignment.centerLeft,
+          height: 40,
+          width: 250,
           decoration: BoxDecoration(
-              color: Colors.grey[200], borderRadius: BorderRadius.circular(10)),
+              color: Colors.white, borderRadius: BorderRadius.circular(10),border: Border.all(color: Colors.grey)),
           child: Row(children: [
             SizedBox(
               width: 12,
             ),
             Icon(Icons.search),
-            TextButton(
-                onPressed: () {},
-                child: Text(
-                  'Search',
-                  style: TextStyle(color: Colors.grey),
-                ))
+            Expanded(
+              child: TextField(
+                decoration: InputDecoration(
+                  hintText: 'Search',
+                  border: InputBorder.none
+                )
+                
+                
+              ),
+            )
           ]),
         ),
         centerTitle: true,
@@ -74,18 +79,24 @@ class _Page1State extends State<Page1> {
               child: Container(
                 padding: EdgeInsets.symmetric(horizontal: 16),
                 height: 60,
-                width: 300,
+                width: 350,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(12),
-                  color: Colors.grey[300]
+                  border: Border.all(color: Colors.grey)
+                  //color: Colors.grey[300]
                 ),
                 child: Row(
                   children: [
                     Icon(Icons.location_on),
                     SizedBox(width: 20,),
-                    Text(
-                      'Type Your Location'
-
+                    Expanded(
+                      child: TextField(
+                        decoration: InputDecoration(
+                          hintText: 'Type Your Location',
+                          border: InputBorder.none
+                        ),
+                      
+                      ),
                     ),
                     SizedBox(width: 45,),
                     VerticalDivider(
@@ -108,33 +119,33 @@ class _Page1State extends State<Page1> {
                  Text('Our Service',style: TextStyle(fontSize: 27,fontWeight: FontWeight.bold,color: Colors.black),),
                ],
              ),
-            SizedBox(height: 30,),
+            SizedBox(height: 23,),
             Row(
               children: [
-                SizedBox(width: 10,),
+                SizedBox(width: 30,),
                 Container(
                   height: 150,
                   width: 170,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(20),
-                    color: Colors.grey[300]
+                    border: Border.all(color: Colors.grey)//color: Colors.grey[300]
                   ),
                   child:Column(
                     children: [
-                          Image.asset('assets/truck.jpg',height: 110,width: 150,),
+                          Image.asset('assets/tanker.webp',height: 110,width: 150,),
                       Text('Water Tanker',style: TextStyle(
                         color: Colors.black,fontSize: 18
                       ),)
                     ],
                   ),
                 ),
-                SizedBox(width: 8),
+                SizedBox(width: 12),
                 Container(
                   height: 150,
                   width: 170,
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(20),
-                      color: Colors.grey[300]
+                      border: Border.all(color: Colors.grey)//color: Colors.grey[300]
                   ),
                   child:Column(
                     children: [
@@ -160,7 +171,7 @@ class _Page1State extends State<Page1> {
               width: 300,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(20),
-                color: Colors.grey[300]
+                border: Border.all(color: Colors.grey)//color: Colors.grey[300]
               ),
               child: Row(
                 children: [
@@ -171,7 +182,7 @@ class _Page1State extends State<Page1> {
                       borderRadius: BorderRadius.circular(10),
                       color: Colors.white
                     ),
-                    child: Image.asset('assets/truck.jpg',fit: BoxFit.fitHeight,),
+                    child: Image.asset('assets/tanker.webp',fit: BoxFit.fitHeight,),
                   ),
                   Column(
                     children: [
@@ -196,7 +207,7 @@ class _Page1State extends State<Page1> {
 
                   ),
                   Spacer(),
-                IconButton(onPressed: (){}, icon: Icon(Icons.heart_broken))
+                IconButton(onPressed: (){}, icon: Icon(Icons.favorite_border))
                 ],
               )
               ),
@@ -206,7 +217,7 @@ class _Page1State extends State<Page1> {
                 width: 300,
                 decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(20),
-                    color: Colors.grey[300]
+                    border: Border.all(color: Colors.grey)//color: Colors.grey[300]
                 ),
                 child: Row(
                   children: [
@@ -217,7 +228,7 @@ class _Page1State extends State<Page1> {
                           borderRadius: BorderRadius.circular(10),
                           color: Colors.white
                       ),
-                      child: Image.asset('assets/truck.jpg',fit: BoxFit.fitHeight,),
+                      child: Image.asset('assets/tanker.webp',fit: BoxFit.fitHeight,),
                     ),
                     Column(
                       children: [
@@ -242,7 +253,7 @@ class _Page1State extends State<Page1> {
 
                     ),
                     Spacer(),
-                    IconButton(onPressed: (){}, icon: Icon(Icons.heart_broken))
+                    IconButton(onPressed: (){}, icon: Icon(Icons.favorite_border))
                   ],
                 )
             ),

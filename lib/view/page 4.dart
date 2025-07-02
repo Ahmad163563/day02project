@@ -18,7 +18,6 @@ class _Page4State extends State<Page4> {
         appBar: AppBar(
         title: Row(
         children: [
-        Icon(Icons.arrow_back),
     SizedBox(width: 20,),
     Text('Select address',style: TextStyle(fontSize: 24,fontWeight: FontWeight.bold,color: Colors.black),)
     ],
@@ -33,28 +32,33 @@ class _Page4State extends State<Page4> {
           child: Container(
           padding: EdgeInsets.symmetric(horizontal: 16),
             height: 80,
-            width: 300,
+            width: 350,
             decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(12),
             border: Border.all(color: Colors.grey),
-            color: Colors.grey[300]
+            //color: Colors.grey[300]
             ),
             child: Row(
             children: [
             SizedBox(width: 13,),
-            Text(
-            'Add new address',style: TextStyle(fontSize: 20,fontWeight: FontWeight.w300,color: Colors.black),
-        
+            Expanded(
+              child: TextField(
+              decoration: InputDecoration(
+                hintText: 'Add new address',
+                border: InputBorder.none
+              ),
+                      
+              ),
             ),
-            SizedBox(width: 52,),
+            SizedBox(width: 88,),
             VerticalDivider(
             color: Colors.grey,
             width: 10,
-            thickness: 1,
+            thickness: 2,
             indent: 12,     // Top padding
             endIndent: 12,  // Bottom padding
             ),
-        SizedBox(width: 10,),
+        SizedBox(width: 18,),
         Icon(Icons.my_location)
           ],
         ),

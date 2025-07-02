@@ -18,14 +18,17 @@ class _Page3State extends State<Page3> {
       appBar: AppBar(
         title: Row(
           children: [
-            Icon(Icons.arrow_back),
-            SizedBox(width: 20,),
+            SizedBox(width: 10,),
             Text('Tanker details',style: TextStyle(fontSize: 24,fontWeight: FontWeight.bold,color: Colors.black),)
           ],
         ),
         actions: [
           Container(
-            child: IconButton(onPressed: (){}, icon: Icon(Icons.heart_broken)),
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(10),
+              color: Colors.white70
+            ),
+            child: IconButton(onPressed: (){}, icon: Icon(Icons.favorite_border,color: Colors.black,)),
           )
         ],
       ),
