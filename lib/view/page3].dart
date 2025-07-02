@@ -37,11 +37,22 @@ class _Page3State extends State<Page3> {
           SizedBox(height: 20,),
           Row(
             children: [
-              SizedBox(width: 20,),
-              Text('Mirpur 11 Block c Dhaka\n Bangladesh'),
-
+              SizedBox(width: 25,),
+              Text('Mirpur 11 Block c Dhaka\n Bangladesh',style: TextStyle(color: Colors.grey[600],fontSize: 18),),
+                SizedBox(width: 70,),
+              Container(
+                color: Colors.orange,
+                child: IconButton(onPressed: (){}, icon:  Icon(Icons.add_to_drive_outlined,color: Colors.white,)),
+              )
             ],
-          )
+          ),
+          SizedBox(height: 20,),
+          Row(
+            children: [
+              SizedBox(width: 30,),
+              Text('Details',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 34,color: Colors.black),),
+            ],
+          ),
         ],
       ),
     );
