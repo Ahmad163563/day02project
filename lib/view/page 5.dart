@@ -18,15 +18,16 @@ class _Page5State extends State<Page5> {
       appBar: AppBar(
         title: Row(
           children: [
-            SizedBox(width: 10,),
-            Icon(Icons.arrow_back),
             SizedBox(width: 20,),
             Text('Order',style: TextStyle(fontSize: 24,fontWeight: FontWeight.bold,color: Colors.black),)
           ],
         ),
         actions: [
           Container(
-            color: Colors.grey[100],
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(10),
+              border: Border.all(color: Colors.grey)
+            ),//color: Colors.grey[100],
             child: IconButton(onPressed: (){}, icon: Icon(Icons.more_vert)),
           ),
         ],
@@ -67,7 +68,7 @@ class _Page5State extends State<Page5> {
           Container(
          decoration: BoxDecoration(
            borderRadius: BorderRadius.circular(10),
-           color: Colors.grey[50],
+           border: Border.all(color: Colors.grey)//color: Colors.grey[50],
          ),
             height: 150,
                width: 350,
@@ -225,10 +226,10 @@ class _Page5State extends State<Page5> {
                     width: 60,
                     height: 60,
                     decoration: BoxDecoration(
-                      color: Colors.grey.shade300,
+                      border: Border.all(color: Colors.grey),//color: Colors.grey.shade300,
                       borderRadius: BorderRadius.circular(8),
                     ),
-                    child: Image.asset('assets/truck.jpg')//Icon(Icons.local_shipping, size: 30),
+                    child: Image.asset('assets/tanker.webp')//Icon(Icons.local_shipping, size: 30),
                   ),
                   SizedBox(width: 12),
         
@@ -302,10 +303,10 @@ class _Page5State extends State<Page5> {
                     width: 60,
                     height: 60,
                     decoration: BoxDecoration(
-                      color: Colors.grey.shade300,
+                      border: Border.all(color: Colors.grey),//color: Colors.grey.shade300,
                       borderRadius: BorderRadius.circular(8),
                     ),
-                    child: Icon(Icons.local_shipping, size: 30),
+                    child: Image.asset('assets/tanker.webp')
                   ),
                   SizedBox(width: 12),
         
@@ -341,7 +342,7 @@ class _Page5State extends State<Page5> {
                   Expanded(
                     child: ElevatedButton(
                       onPressed: () {},
-                      style: ElevatedButton.styleFrom(backgroundColor: Colors.white70),
+                      style: ElevatedButton.styleFrom(backgroundColor: Colors.white,),
                       child: Text("Reject",style: TextStyle(color: Colors.green),),
                     ),
                   ),
