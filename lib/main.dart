@@ -1,5 +1,6 @@
 import 'package:day2/view/page%204.dart';
 import 'package:day2/view/page%205.dart';
+import 'package:day2/view/page%206.dart';
 import 'package:day2/view/page%207.dart';
 import 'package:day2/view/page1.dart';
 import 'package:day2/view/page2.dart';
@@ -22,7 +23,7 @@ class MyApp extends StatelessWidget {
         title: 'Flutter Demo',
         theme: ThemeData(
         ),
-        home: Page8()//Page5()//Page4()//Page3()//Page2()//Page1() //Home(),
+        home: Page1()//Page5()//Page4()//Page3()//Page2()//Page1() //Home(),
     );
   }
 

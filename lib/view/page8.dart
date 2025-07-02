@@ -49,8 +49,8 @@ class _Page9State extends State<Page8> {
             ),
             child: Column(
               children: [
-                //SizedBox(width: 10,
-                ),
+                //SizedBox(width: 10),
+
                 Text('Estimated delivery time'),
                 Text('15-20 min'),
                 Divider(

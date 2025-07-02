@@ -1,3 +1,4 @@
+import 'package:day2/view/page3%5D.dart';
 import 'package:flutter/material.dart';
 
 class Page2 extends StatefulWidget {
@@ -11,6 +12,7 @@ class _Page2State extends State<Page2> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      floatingActionButton: FloatingActionButton(onPressed: (){Navigator.push(context, MaterialPageRoute(builder: (context)=>Page3()));}),
         appBar: AppBar(
         leading: IconButton(onPressed: () {}, icon: Icon(Icons.menu)),
     title: Container(
