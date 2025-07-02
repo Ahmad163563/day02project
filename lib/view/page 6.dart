@@ -61,13 +61,19 @@ class _Page6State extends State<Page6> {
                       ],
                     ),
                   ),
-                  SizedBox(height: 20),
+                  SizedBox(height: 30),
                   // Truck icons (dummy row)
                   Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                   // mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: [
-                      CircleAvatar(child: Icon(Icons.indeterminate_check_box, color: Colors.green)),
-                       CircleAvatar(child: Icon(Icons., color: Colors.green)),
+                      SizedBox(width: 20,),
+                      CircleAvatar(backgroundColor: Colors.green,child: Icon(Icons.indeterminate_check_box, color: Colors.white)),
+                      Container(width: 100,height: 4,color: Colors.green,),
+                      CircleAvatar(
+                           backgroundColor: Colors.green,
+                           child: Icon(Icons.attach_money, color: Colors.white)),
+                      Container(width: 100,height: 4,color: Colors.grey,),
+                    CircleAvatar(backgroundColor:Colors.white,child: Icon(Icons.fire_truck,color: Colors.grey,),)
                     ],
                   ),
                 ],
