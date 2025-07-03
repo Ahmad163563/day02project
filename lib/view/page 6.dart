@@ -51,12 +51,12 @@ class _Page6State extends State<Page6> {
                       children: [
                         SizedBox(width: 20,),
                         Icon(Icons.close_rounded,color: Colors.red,),
-                        SizedBox(width: 30,),
+                        SizedBox(width: 20,),
                         Text(
                           "Your Load is disabled",
                           style: TextStyle(color: Colors.red),
                         ),
-                        SizedBox(width: 85,),
+                        SizedBox(width: 50,),
                         Text('Enable',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 22,color: Colors.red),)
                       ],
                     ),
@@ -66,13 +66,13 @@ class _Page6State extends State<Page6> {
                   Row(
                    // mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: [
-                      SizedBox(width: 20,),
+                      SizedBox(width: 10,),
                       CircleAvatar(backgroundColor: Colors.green,child: Icon(Icons.indeterminate_check_box, color: Colors.white)),
                       Container(width: 100,height: 4,color: Colors.green,),
                       CircleAvatar(
                            backgroundColor: Colors.green,
                            child: Icon(Icons.attach_money, color: Colors.white)),
-                      Container(width: 100,height: 4,color: Colors.grey,),
+                      Container(width: 90,height: 4,color: Colors.grey,),
                     CircleAvatar(backgroundColor:Colors.white,child: Icon(Icons.fire_truck,color: Colors.grey,),)
                     ],
                   ),
@@ -156,15 +156,9 @@ class _Page6State extends State<Page6> {
 
                       Text('240 - Lorries'),
                       SizedBox(width: 15,),
-                      VerticalDivider(
-                        color: Colors.grey,
-                        thickness: 1,
-                        indent: 5,
-                        endIndent:5 ,
-                      ),
                       SizedBox(width: 20,),
                       Icon(Icons.watch_later_sharp, color: Colors.green),
-                      SizedBox(width: 15,),
+                      SizedBox(width: 10,),
                       Text('Since - 2013')
                     ],
                   ),

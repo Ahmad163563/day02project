@@ -41,8 +41,8 @@ class _Page9State extends State<Page8> {
           ),
           SizedBox(height: 20,),
           Container(
-            height: 200,
-            width: 350,
+            height: 255,
+            width: 300,
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(10),
               border: Border.all(color: Colors.grey)//color: Colors.grey[50]
@@ -51,12 +51,25 @@ class _Page9State extends State<Page8> {
               children: [
                 //SizedBox(width: 10),
            SizedBox(height: 30,),
-                Text('Estimated delivery time'),
-                Text('15-20 min'),
+                Row(
+                  children: [
+                    SizedBox(width: 20,),
+                    Text('Estimated delivery time',style: TextStyle(fontSize: 18),),
+                  ],
+                ),
+                SizedBox(height: 5,),
+                Row(
+                  children: [
+                    SizedBox(width: 20,),
+                    Text('15 - 20',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 20,color: Colors.black),),
+                    Text('min')
+                  ],
+                ),
+                SizedBox(height: 8,),
                 Divider(
                   thickness: 2,
-                  endIndent: 50,
-                  indent: 50,
+                  endIndent: 30,
+                  indent: 30,
                 ),
                  Padding(
                    padding: const EdgeInsets.all(15),
